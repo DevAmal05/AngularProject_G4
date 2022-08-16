@@ -11,3 +11,20 @@ Install
          cd helloworld
          code .
          ng serve
+
+
+Bootstrap
+         npm install bootstrap
+         "node_modules/bootstrap/dist/css/bootstrap.min.css" (angular.json)
+
+Primeng
+         npm install primeng --save
+         npm install primeicons --save
+       
+
+Model
+         ng g class nom_model
+
+Firebase
+         npm install firebase@9.9.0 --save
+         npm install --save firebase @angular/fire
