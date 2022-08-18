@@ -10,12 +10,17 @@ import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireModule} from '@angular/fire/compat'
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
+import { RegisterComponent } from './register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PeoplelistComponent } from './peoplelist/peoplelist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    PeoplelistComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,9 @@ import { environment } from 'src/environments/environment';
     ButtonModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule,
+    ReactiveFormsModule
 
 
   ],
